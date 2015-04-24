@@ -143,7 +143,9 @@
         } else {
             scaleFactor = widthFactor; // scale to fit width
         }
-        scaledSize = CGSizeMake(width * scaleFactor, height * scaleFactor);
+        
+        // fix white line at the bottom in some images
+        scaledSize = CGSizeMake(floor(width * scaleFactor), floor(height * scaleFactor));
     }
 
     UIGraphicsBeginImageContext(scaledSize); // this will resize
