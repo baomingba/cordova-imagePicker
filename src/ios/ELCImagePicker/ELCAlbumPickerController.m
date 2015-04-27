@@ -26,7 +26,7 @@
 {
     [super viewDidLoad];
 	
-	[self.navigationItem setTitle:@"Loading..."];
+	[self.navigationItem setTitle:@"正在加载..."];
 
     UIBarButtonItem *cancelButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self.parent action:@selector(cancelImagePicker)];
 	[self.navigationItem setRightBarButtonItem:cancelButton];

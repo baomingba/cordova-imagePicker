@@ -107,7 +107,7 @@
                                                       animated:NO];
             }
             
-            [self.navigationItem setTitle:self.singleSelection ? @"选择图片" : @"选择图片"];
+            [self.navigationItem setTitle:self.singleSelection ? @"选择照片" : @"选择照片"];
         });
     }
 }
