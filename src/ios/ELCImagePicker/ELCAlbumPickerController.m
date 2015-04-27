@@ -67,7 +67,7 @@
             // Group Enumerator Failure Block
             void (^assetGroupEnumberatorFailure)(NSError *) = ^(NSError *error) {
                 
-                UIAlertView * alert = [[UIAlertView alloc] initWithTitle:@"Error" message:[NSString stringWithFormat:@"Album Error: %@ - %@", [error localizedDescription], [error localizedRecoverySuggestion]] delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+                UIAlertView * alert = [[UIAlertView alloc] initWithTitle:@"错误" message:[NSString stringWithFormat:@"相册错误: %@ - %@", [error localizedDescription], [error localizedRecoverySuggestion]] delegate:nil cancelButtonTitle:@"好" otherButtonTitles:nil];
                 [alert show];
                 
                 NSLog(@"A problem occured %@", [error description]);	                                 
@@ -85,7 +85,7 @@
 - (void)reloadTableView
 {
 	[self.tableView reloadData];
-	[self.navigationItem setTitle:@"Select an Album"];
+	[self.navigationItem setTitle:@"相册"];
 }
 
 - (BOOL)shouldSelectAsset:(ELCAsset *)asset previousCount:(NSUInteger)previousCount
